@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Management Dashboard</h1>
+        <div class="projects-container">
+            <button class="add-project" onclick="showAddProjectForm()">+ Add Project</button>
+            <div id="projects-list"></div>
+        </div>
+        <div id="add-project-form" class="hidden">
+            <h2>Create New Project</h2>
+            <input type="text" id="project-name" placeholder="Project Name" />
+            <textarea id="project-description" placeholder="Project Description"></textarea>
+            <button onclick="addProject()">Create Project</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
